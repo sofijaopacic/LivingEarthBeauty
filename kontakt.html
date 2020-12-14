@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <meta name="keywords" content="kosa, sampon, nega, lepota, frizura">
+        <title>Living Earth Beauty-Kontakt</title>
+        <link rel="shortcut icon" type="image/png" href="slike/logo.png">
+        <link href="css/general.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="javascript/kontaktProvera.js" type="text/javascript"></script>
+        
+    </head>
+
+    <body>
+        <header>    
+            <div class="logo">
+                 <img class="img-logo" src="slike/logo.png" alt="LIVINGEARTH" >      
+            </div>  
+            <label id="label2" for="toggle">&#9776;</label>
+             <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="narucivanje.html">Poručivanje</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a class="active"  href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>  
+        </header>
+
+            <div class="page-content">
+                <h1>Imate dodatna pitanja? <br> Kontaktirajte nas!</h1>
+                <div class="forma">
+                    <form  id="kontakt" name="kontakt">
+                        <div class="form-group">
+                            <div class="kolona1">
+                                <input class="poljeForma" type="text" name="ime" maxlength="64" id="ime" 
+                                placeholder="Ime" >
+                            </div>
+                            <div class="kolona1">
+                                <input class="poljeForma" type="text" name="prezime" maxlength="64" id="prezime"  
+                                placeholder="Prezime" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="kolona1">
+                             <input class="poljeForma" type="email" name="emailAdresa" maxlength="128" required aria-required="true" 
+                             placeholder="Email"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="textPoruka" name="poruka" wrap="" id="poruka" 
+                            placeholder="Poruka..." rows="30" style="margin: auto;" ></textarea>
+                        </div>
+
+                     <div class="form-group">
+                        <input class="dugme" type="submit" value="Pošalji" onclick="proveraKontakt()">
+                        <input class="dugme" type="reset" value="Resetuj" >
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+                    <p class="paragrafFoot">Living Earth Beauty™</p>
+                    <br>
+    </body>
+
+
+</html>

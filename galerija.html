@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatable" content="ie=edge">
+    <meta name="keywords" content="kosa, sampon, nega, lepota, frizura">
+    <title>Living Earth Beauty-Galerija</title>
+    <link rel="shortcut icon" type="image/png" href="slike/logo.png">
+    <link href="css/general.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet"  type="text/css" href="javascript/jquery/lightbox-gallery-blurred/jquery.lightbox.css" >
+    <script src="javascript/jquery/jquery-3.5.1.js"></script>
+    <script  type="text/javascript" src="javascript/jquery/lightbox-gallery-blurred/jquery.lightbox.min.js"></script>
+    <script src="javascript/jquery/lightbox-gallery-blurred/jquery.lightbox.js"></script>
+
+    
+
+</head>
+
+<body>
+    <header>    
+        <div class="logo">
+             <img class="img-logo" src="slike/logo.png" alt="LIVINGEARTH" >      
+        </div>  
+        <label id="label2" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <ul>
+                <li><a href="pocetna.html">Početna</a></li>
+                <li><a href="proizvodi.html">Proizvodi</a></li>
+                <li><a href="narucivanje.html">Poručivanje</a></li>
+                <li><a class="active" href="galerija.html">Galerija</a></li>
+                <li><a   href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>  
+    </header>
+
+   
+        <div class="page-content">
+            <h1>Kako izgledaju naši proizvodi!</h1>
+
+            <ul class="gallery"> 
+                    <a href="slike/slika2.jpg">  
+                        <img src="slike/slika2-manja.jpg">  
+                    </a> 
+                  </li> 
+                  <li> 
+                    <a href="slike/slika3.jpg">  
+                        <img src="slike/slika3-manja.jpg">  
+                    </a> 
+                  </li> 
+                  <li> 
+                    <a href="slike/slika4.jpg">  
+                        <img src="slike/slika4-manja.jpg">  
+                    </a> 
+                  </li> 
+            
+                </ul>
+
+                <br>
+                <p class="paragrafFoot">Living Earth Beauty™</p>
+                <br>
+         </div>
+         <script>
+
+             $(function() {
+            $('.gallery a').lightbox();
+            });
+
+            $('.gallery a').lightbox({
+            margin: 100
+            });
+
+            
+            $('.gallery a').lightbox({
+            nav:false
+            });
+
+            
+            $('.gallery a').lightbox({
+            blur:false
+            });
+
+            $('.gallery a').lightbox({
+            minSize: 480
+            });
+
+         </script>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+html {
+    font-family: Garamond, serif;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1.42857143;
+    color: #3f413e;
+    background-color: #C6FAD2;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  header{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color:  #adfdbf;
+  }
+
+  .logo{
+      align-self: center;
+  }
+
+  .img-logo{
+    width: 150px;
+    height: 125px;
+    align-self: center;
+  }
+
+  .menu{
+      background-color:  #adfdbf;
+  }
+
+ul {
+    list-style-type: none;
+    font-size: 24px;
+    color:#3f413e;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    margin:  auto;
+  }
+
+ li {
+    display: inline;
+    float: center;
+    width: 100%;
+  }
+
+ a {
+    padding: 8px;  
+  }
+
+  li a {
+    text-align: center;
+    color: #3f413e;
+    padding: 40px 32px;
+    text-decoration: none;
+  }
+
+  li a:hover{
+    background-color: #F6FFEE;
+  }
+  #label2{
+    height: 30px;
+    width: 100px;
+    background-color: #adfdbf;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px; 
+    display: none;
+   
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #label2 {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul li {
+        display: block; 
+        margin: 5px;  
+    }
+    
+   li a{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 0%;
+    }
+
+    li a:hover{
+        height: 100%;
+        width: 100%;
+        padding: 0%;
+        margin: auto;
+      }
+    
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+       
+}
+
+h1{
+    text-align: center;
+    font-family: inherit;
+    color: #DD9BCF;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+h2{
+    text-align: center;
+    font-family: inherit;
+    color: #DD9BCF;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+h3{
+    text-align: center;
+    font-family: inherit;
+    color: #3f413e;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+
+.page-content{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    max-height: 500px;
+}
+
+.paragraf{
+    text-align: center;
+}
+
+.paragrafFoot{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+ 
+.forma {
+	margin-right:auto;margin-left:auto;
+	width:100%;
+	max-width:570px;
+	position:relative;
+    min-height: 20px;
+    padding:19px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position:relative;
+	margin-right: -15px;
+    margin-left: -15px;
+	margin-bottom: 15px;
+    min-height:30px;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.poljeForma {
+    display: block;
+	width: 100%;
+	padding: 10px;
+    height: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+    word-break: normal;
+    border: 200px #FAD2CC ;
+    background-color: #FAD2CC;
+    border-radius: 30px;
+    box-sizing: border-box; 
+
+}
+
+.poljeForma:focus{
+    border-color: #F48882;
+    background-color: #F48882;
+}
+
+.textPoruka{
+    height: 150px;
+    width: 600px;
+    border: 200px #FAD2CC ;
+    background-color: #FAD2CC;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.dugme{
+    height: 30px;
+    width: 100px;
+    background-color: #FAD2CC;
+    text-align: center;
+    border-radius: 15px;  
+    margin: auto;
+    border-color: #FAD2CC;
+    box-shadow: none;
+}
+
+.dugme:hover{
+    background-color: #F48882;;
+}
+
+.dugmePoruci{
+    height: 30px;
+    width: 100px;
+    background-color: #FAD2CC;
+    text-align: center;
+    border-radius: 15px;  
+    margin: auto;
+    border-color: #FAD2CC;
+    box-shadow: none;
+    align-self: center;
+}
+
+.dugmePoruci:hover{
+    background-color: #F48882;;
+}
+
+label{
+    height: 30px;
+    width: 100px;
+    background-color: #FAD2CC;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px; 
+}
+
+
+
+.ikonica{
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+}
+
+.miris{
+    margin-left: 50px;
+}
+
+.padajuciMeni{
+    height: 40px;
+    width: 130px;
+    background-color: #FAD2CC;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px; 
+}
+
+.active{
+    background-color: #C6FAD2 ;
+}
+
+.kolona1{
+    width: 100%;
+    flex: 1;
+    padding: 10px ;
+    
+}
+
+.prozor{
+    align-self: center ;
+}
+
+.slikaSampon{
+    height: 500px;
+    width: 350px;
+}
+
+.dugmici{
+    display: flex;
+}

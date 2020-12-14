@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <meta name="keywords" content="kosa, sampon, nega, lepota, frizura">
+        <title>Living Earth Beauty-Proizvodi</title>
+        <link rel="shortcut icon" type="image/png" href="slike/logo.png">
+        <link href="css/general.css" rel="stylesheet" type="text/css" media="all" />     
+    </head>
+
+    <body>
+        <header>    
+            <div class="logo">
+                 <img class="img-logo" src="slike/logo.png" alt="LIVINGEARTH" >      
+            </div>  
+            <label id="label2" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/> 
+            <div class="menu">
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a class="active" href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="narucivanje.html">Poručivanje</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a  href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>  
+        </header>
+
+            <div class="page-content">
+                <h1>Naši proizvodi!</h1>
+                <h2>Ako niste sigurni koju biste kombinaciju napravili možete da poručite neku
+                    gotovu formulu koju smo mi smislili!
+                </h2>
+                <div class="form-group">
+                    <div class="prozor">
+                        <img class="slikaSampon" src="slike/roze.png" alt="Roze sampon">
+                    </div>
+                    <div class="prozor">
+                        <p class="paragraf">Naš roze šampon je savršen za vas ako imate suvu i oštećenu kosu! Sa mirisom jagode i 
+                            roze bojomsavršeno hidrira i obnavlja kosu! Jagoda je poznata po tome što čini kosu svilenom i našom tajnom
+                            formulom smo dodali mnogo prirodnih i hranljivih sastojaka koji će vas oduševiti!
+                             <br> <BR> 500ML - 600 RSD
+                        </p>
+                        
+                        <div class="dugmici">
+                            <input class="dugmePoruci" type="submit" value="PORUČI" onclick="otvoriProzor()" >
+                            <input class="dugmePoruci" type="scroll" value="DALJE" onclick="skrol()">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="prozor">
+                        <img class="slikaSampon" src="slike/zuto.png" alt="Zuti sampon">
+                    </div>
+                    <div class="prozor">
+                        <p class="paragraf">Naš žuti šampon sa mirisom vanile je namenjen za kovrdžavu kosu. Ovaj šampon će hidrirati 
+                            vaše lokne, dodati im volumen i hraniti vašu kosu. Vaše lokne će biti svilene i mekane ali će zadržati svoj
+                            oblik, miris vanile dugo ostaje u kosi. Takođe je ovaj šampon dobra opcija za vas i ako imate keratinske 
+                            lokne i nema sulfata tako da je siguran i za farbanu kosu!
+                            <br> <BR> 500ML - 600 RSD
+                        </p>
+                        <div class="dugmici">
+                        <input class="dugmePoruci" type="submit" value="PORUČI" onclick="otvoriProzor()">
+                        <input class="dugmePoruci" type="scroll" value="DALJE" onclick="skrol()" >
+                        <input class="dugmePoruci" type="scroll" value="NAZAD" onclick="skrol2()" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="prozor">
+                        <img class="slikaSampon" src="slike/plavo.png" alt="Plavi sampon">
+                    </div>
+                    <div class="prozor">
+                        <p class="paragraf">Plavi šampon sa mirisom kokosa je odličan izbor za vas ukoliko imate plavu kosu. 
+                            Neutrališe žutilo u vašoj kosi i čini boju lepšom i prirodnijom. Takođe sadži i keratin koji će vašu kosu 
+                            ojačati i ispraviti. Kokos čini vašu kosu mekšom i oporavlja od farbe i ostavlja miris čak i 48h nakon 
+                            pranja. Ukoliko ga ostavite par minuta da stoji na vašoj kosi dobićete prelepe nijanse sive boje. 
+                             <br> <br> 500ML - 600 RSD
+                        </p>
+                        <div class="dugmici">
+                            <input class="dugmePoruci" type="submit" value="PORUČI" onclick="otvoriProzor()">
+                            <input class="dugmePoruci" type="scroll" value="NAZAD" onclick="skrol2()" >
+                            </div>
+                    </div>
+                </div>
+
+                    <br>
+                    <p class="paragrafFoot">Living Earth Beauty™</p>
+                    <br>
+            </div>
+
+    <script>
+       function otvoriProzor(){
+            window.open("narucivanje2.html");
+        }
+
+        function skrol(){
+            window.scrollBy(0,500)
+        }
+
+        function skrol2(){
+            window.scrollBy(0,-500)
+        }
+    </script>
+    </body>
+</html>

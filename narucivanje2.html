@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <meta name="keywords" content="kosa, sampon, nega, lepota, frizura">
+        <title>Living Earth Beauty-Poručivanje</title>
+        <link rel="shortcut icon" type="image/png" href="slike/logo.png">
+        <link href="css/general.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="javascript/narucivanjeProvera.js" type="text/javascript"></script>
+        
+    </head>
+
+    <body>
+        <body>
+            <header>    
+                <div class="logo">
+                     <img class="img-logo" src="slike/logo.png" alt="LIVINGEARTH" >      
+                </div>  
+                <label id="label2" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/> 
+                <div class="menu">
+                    <ul>
+                        <li><a  href="pocetna.html">Početna</a></li>
+                        <li><a href="proizvodi.html">Proizvodi</a></li>
+                        <li><a class="active" href="narucivanje.html">Poručivanje</a></li>
+                        <li><a href="galerija.html">Galerija</a></li>
+                        <li><a  href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>  
+            </header>
+    
+                <div class="page-content">
+                    <h1>Poručite!</h1>
+                        <div class="forma">
+                            <form  id="poruci" name="poruci">
+                                <div class="form-group">
+                                    <div class="kolona1">
+                                        <input class="poljeForma" type="text" name="ime" id="ime" maxlength="64"  
+                                        placeholder="Ime" >
+                                    </div>
+                                    <div class="kolona1">
+                                        <input class="poljeForma" type="text" name="prezime" id="prezime" maxlength="64" 
+                                        placeholder="Prezime" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="kolona1">
+                                        <input class="poljeForma" type="adress" name="adresa" id="adresa" maxlength="128"  
+                                                                    placeholder="Adresa"> 
+                                    </div>
+                                    <div class="kolona1">
+                                        <input class="poljeForma" type="number" name="broj"  id="brojAdresa" maxlength="128"  
+                                                                    placeholder="Broj adrese"> 
+                                    </div>
+                                    <div class="kolona1">
+                                        <input class="poljeForma" type="number" name="brojTelefona" id="broj" maxlength="128"  
+                                        placeholder="Broj telefona"> 
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="dugme" type="submit" value="Pošalji" onclick="provera()" >
+                                     <input class="dugme" type="reset" value="Resetuj" >
+                                </div>
+                                </form>
+                                <br>
+                                <p class="paragrafFoot">Living Earth Beauty™</p>
+                                <br>
+                        </div>
+    </body>
+</html>
